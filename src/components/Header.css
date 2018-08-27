@@ -3,3 +3,7 @@ header {
   height: 50px;
   padding: 20px;
 }
+
+ul{
+  align-content:right;
+}
