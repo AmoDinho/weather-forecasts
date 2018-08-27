@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink} from "reactstrap"
-
+import "./Header.css";
 
   export default class Example extends React.Component {
     constructor(props) {
@@ -37,7 +37,7 @@ toogleNavbar(){
     render() {
       return (
         <div>
-          <Navbar color="light" light expand="md">
+          <Navbar className="Navbar" light expand="md">
             <NavbarBrand href="/">Weather App</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} />
             <Collapse isOpen={!this.state.collapsed} navbar>
