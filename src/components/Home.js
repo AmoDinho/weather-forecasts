@@ -1,12 +1,18 @@
 import React from "react";
+import "./Home.css";
+import {Container, Row,Col} from "reactstrap";
 
 const Home = () => (
-  <div>
-    <header>
-    <h1>CPT Weekly Weather Forecasts</h1>
+  
+   <Container>
+<Row>
+  <Col>
+  <h1 >Cape Town Weather Forecasts  </h1>
+  
+  </Col>
+</Row>
+   </Container>
 
-    </header>
-  </div>
-);
+); 
 
 export default Home;

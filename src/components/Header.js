@@ -6,41 +6,41 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink} from "reactstrap"
+  NavLink} from "reactstrap";
+
 import "./Header.css";
 
   export default class Example extends React.Component {
     constructor(props) {
       super(props);
   
-      //this.toggle = this.toggle.bind(this);
-      this.toogleNavbar = this.toogleNavbar.bind(this);
+      this.toggle = this.toggle.bind(this);
+     // this.toogleNavbar = this.toogleNavbar.bind(this);
       this.state = {
-        //isOpen: false
-        collapsed:true
+        isOpen: false
+        //collapsed:false
       };
     }
 
-    /*
+    
     toggle() {
       this.setState({
         isOpen: !this.state.isOpen
       });
     }
-*/
-
+/*
 toogleNavbar(){
   this.setState({
     collapsed: !this.state.collapsed
   });
-}
+}*/
     render() {
       return (
         <div>
-          <Navbar className="Navbar" light expand="md">
+          <Navbar className="Navbar" light  expand="md">
             <NavbarBrand href="/">Weather App</NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} />
-            <Collapse isOpen={!this.state.collapsed} navbar>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
                 <NavLink href="/"> Home</NavLink>
