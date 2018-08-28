@@ -4,14 +4,18 @@ import {Container, Row,Col} from "reactstrap";
 
 const Home = () => (
   
+  <header>
    <Container>
 <Row>
-  <Col>
-  <h1 >Cape Town Weather Forecasts  </h1>
+  <Col className="mt-5">
+  <h1 className="align-middle">Cape Town Weather Forecasts  </h1>
   
   </Col>
 </Row>
    </Container>
+
+
+  </header>
 
 ); 
 

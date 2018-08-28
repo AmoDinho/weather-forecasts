@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Container, Row,Col,Card,  CardImg, CardTitle, 
   CardBody,CardDeck} from "reactstrap";
 import "./FullDays.css";
+import PropTypes from "prop-types";
 
 const FullDays = () => (
   <div>

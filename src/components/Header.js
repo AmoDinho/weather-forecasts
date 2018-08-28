@@ -43,18 +43,18 @@ toogleNavbar(){
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                <NavLink href="/"> Home</NavLink>
+                <NavLink className="Link" href="/"> Home</NavLink>
                           
                 </NavItem>
 
                 
 
                 <NavItem>
-                   <NavLink href="/days"> Days</NavLink>
+                   <NavLink className="Link" href="/days"> Forecasts</NavLink>
                 </NavItem>
 
                 <NavItem>
-                <NavLink href="/warnings"> Warnings</NavLink>
+                <NavLink  className="Link" href="/warnings"> Warnings</NavLink>
 
 
                 </NavItem>
