@@ -1,27 +1,39 @@
 import React from "react";
 import WeatherAPI from "../api";
 import { Link } from "react-router-dom";
-import { Container, Row,Col,Card, Button, CardImg, CardTitle, CardText, CardGroup,
-  CardSubtitle, CardBody } from "reactstrap";
+import { Container, Row,Col,Card,  CardImg, CardTitle, 
+  CardBody,CardDeck} from "reactstrap";
+import "./FullDays.css";
 
 const FullDays = () => (
   <div>
     <Container>
       <Row>
-        <Col>
+        
+        <Col   className="mx-auto" >
+        <CardDeck  className="mt-4">
         {WeatherAPI.all().map(f => (
 
 
-<CardGroup key={f.number}>
-  <Card className="mt-4">
-    <CardImg top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+<Link to={`/Days/${f.number}`}>
+  <Card key={f.number}  className="mt-4 mb-5 card">
+  <CardImg top width="100%" src={f.thumbnail} alt="Card image cap" />
+
    <CardBody>
-     <CardTitle><Link to={`/Days/${f.number}`}>{f.day}</Link></CardTitle>
+     <CardTitle className="text-center"><Link to={`/Days/${f.number}`}>{f.day}</Link></CardTitle>
+     <Row>    
+       <Col >
+       <p className="d-inline card-text mr-5">{f.tempH}°C</p>
+       <p className="d-inline text-right card-text ml-4">{f.tempL}°C</p>
+     
+    </Col>
+    </Row>
    </CardBody>
   </Card>
-</CardGroup>
+  </Link>
 
 ))}
+</CardDeck>
         </Col>
       </Row>
     </Container>
