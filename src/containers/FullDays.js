@@ -42,4 +42,25 @@ const FullDays = () => (
   </div>
 );
 
+Card.propTypes = {
+  className: PropTypes.string
+};
+
+CardBody.propTypes ={
+  className: PropTypes.string
+}
+
+CardDeck.propTypes ={
+  className: PropTypes.string
+}
+
+CardImg.propTypes ={
+  top: PropTypes.bool,
+  className: PropTypes.string
+}
+
+CardTitle.propTypes ={
+  className: PropTypes.string
+}
+
 export default FullDays;
