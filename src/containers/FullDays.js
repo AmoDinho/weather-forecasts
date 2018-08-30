@@ -11,7 +11,7 @@ const FullDays = () => (
     <Container>
       <Row>
         
-        <Col   className="mx-auto" >
+        <Col   className="ml-5" >
         <CardDeck  className="mt-4">
         {WeatherAPI.all().map(f => (
 
