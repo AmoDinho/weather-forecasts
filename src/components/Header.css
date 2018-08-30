@@ -1,5 +1,11 @@
-header {
-  background-color: greenyellow;
-  height: 50px;
-  padding: 20px;
+
+.Navbar{
+  background: transparent;
 }
+
+.Link:hover{
+  border-top: 4px solid rgb(34,195,180);
+  border-bottom: 4px solid rgb(34,195,180);
+  padding: 6px 0; 
+}
+

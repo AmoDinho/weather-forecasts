@@ -1,5 +1,10 @@
-.App_Header {
-  background-color: greenyellow;
-  height: 150px;
-  padding: 20px;
+
+header{
+  background: rgb(34,195,180);
+  background: linear-gradient(0deg, rgba(34,195,180,1) 0%, rgba(255,255,255,1) 49%);  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+  
 }

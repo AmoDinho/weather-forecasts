@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import CityPicker from "./components/CityPicker";
+import React from "react";
 import "./App.css";
 import Routes from "./Routes";
 import Header from "./components/Header";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
   <div>
